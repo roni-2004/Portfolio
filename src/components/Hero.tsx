@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-supercar.jpg";
+import heroImage from "@/assets/hero-supercar.png";
 
 const Hero = () => {
   return (
@@ -22,18 +22,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 text-center">
         <h1 className="font-orbitron text-6xl md:text-8xl font-black mb-6 animate-fade-in-up">
-          <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-glow-pulse">
-            PREMIUM
+          <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent ">
+            R Roni Albert Jaron
           </span>
           <br />
-          <span className="text-foreground">PORTFOLIO</span>
+          <span className="text-foreground" style={{fontSize:'0.4em' }}>Web Developer | Freelancer</span>
         </h1>
 
         <p className="font-inter text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-          Crafting exceptional digital experiences with cutting-edge design and innovative solutions
+          Web Developer & Freelancer creating sleek, responsive websites with clean design and seamless user experience.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <a href="https://github.com/roni-2004" target="_blank">
           <Button
             size="lg"
             className="font-inter text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow-strong transition-all duration-300 hover:scale-105"
@@ -41,6 +42,8 @@ const Hero = () => {
             View Projects
             <ArrowRight className="ml-2" size={20} />
           </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/ronialbertjaron" target="_blank">
           <Button
             size="lg"
             variant="outline"
@@ -48,6 +51,7 @@ const Hero = () => {
           >
             Get in Touch
           </Button>
+          </a>
         </div>
       </div>
 

@@ -29,7 +29,7 @@ const Index = () => {
 
       <footer className="relative py-8 text-center border-t border-border/50">
         <p className="font-inter text-sm text-muted-foreground">
-          © 2025 Premium Portfolio. Crafted with precision and passion.
+          © 2025 Roni Portfolio.
         </p>
       </footer>
     </div>

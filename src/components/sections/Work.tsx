@@ -4,20 +4,36 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Project Alpha",
-    description: "A cutting-edge web application with advanced animations and modern UI",
-    tech: ["React", "TypeScript", "Tailwind"],
+    title: "Server-Side Rendered Blog Application",
+    description: "Developed a blogging platform using Node.js, Express, and EJS templating for server-side rendering and dynamic content generation.",
+    tech: ["Node.js", "Express.js", "EJS"],
+    link: "https://github.com/roni-2004/Blog-Website",
   },
   {
-    title: "Project Beta",
-    description: "Luxury e-commerce platform with immersive shopping experience",
-    tech: ["Next.js", "Supabase", "Stripe"],
+    title: "Next-Gen Hotel Management & Dashboard Platform",
+    description: "Developing with Next.js (App Router), React Server Components, and Supabase to deliver a high-performance, full-stack hotel management solution.",
+    tech: ["Next.js", "Supabase", "NextAUTH"],
+    link: "",
   },
   {
-    title: "Project Gamma",
-    description: "AI-powered dashboard with real-time analytics and insights",
-    tech: ["Vue", "Python", "TensorFlow"],
+    title: "Filmtopia",
+    description: "Simple React app to search and explore films via OMDB API.",
+    tech: ["JavaScript", "CSS", "API"],
+    link: "https://github.com/roni-2004/Filmtopia",
   },
+  {
+    title: "Core Technical Member @CodeZilla",
+    description: "Assisted in organizing hackathons and tech events, coordinating teams, and ensuring smooth execution of all technical activities.",
+    tech: ["Leadership", "Teamwork", "Communication"],
+    link: "https://codezilla.io",
+  },
+    {
+    title: "Lead Website Developer @SRM Model United Nations",
+    description: " Designed and deployed a responsive static webpage for 300+ participants, improving accessibility and reducing event queries by 20%",
+    tech: ["Frontend", "CSS Frameworks", "SEO Optimization"],
+    link: "https://srmrmun.in",
+  },
+
 ];
 
 const Work = () => {
@@ -98,8 +114,15 @@ const Work = () => {
                   variant="outline"
                   size="lg"
                   className="border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary transition-all duration-300"
+                  onClick={()=>{
+                    if(project.link){
+                    window.open(project.link, "_blank");
+                    } else {
+                      alert("Project in-progress!");
+                    }
+                  }}
                 >
-                  View Project
+                  Link
                   <ExternalLink className="ml-2" size={18} />
                 </Button>
               </div>

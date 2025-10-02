@@ -4,27 +4,27 @@ import { Code, Palette, Zap, Shield } from "lucide-react";
 const skills = [
   {
     icon: Code,
-    title: "Development",
-    description: "Expert in modern web technologies and frameworks",
-    items: ["React", "TypeScript", "Node.js", "Python"],
+    title: "Web Development",
+    description: "Building responsive, modern websites with clean and efficient code.",
+    items: ["React", "JavaScript", "Node.js", "Express.js", "EJS"],
   },
   {
     icon: Palette,
     title: "Design",
-    description: "Creating stunning visual experiences with attention to detail",
-    items: ["UI/UX", "Figma", "Adobe XD", "3D Design"],
+    description: "Crafting visually appealing interfaces with attention to detail.",
+    items: ["UI/UX", "Figma", "Adobe After Effects", "Adobe Photoshop"],
   },
   {
     icon: Zap,
-    title: "Performance",
-    description: "Building fast, optimized applications that scale",
-    items: ["Optimization", "SEO", "Analytics", "Testing"],
+    title: "Languages",
+    description: "Writing efficient, maintainable, and scalable code.",
+    items: ["C", "Python", "Java", "C++", "C#"],
   },
   {
     icon: Shield,
-    title: "Security",
-    description: "Implementing robust security measures and best practices",
-    items: ["Authentication", "Encryption", "GDPR", "DevOps"],
+    title: "Database Management",
+    description: "Managing and securing data with reliable database solutions.",
+    items: ["MySQL", "PostgreSQL", "MongoDB", "Supabase"],
   },
 ];
 
