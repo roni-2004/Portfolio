@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ParticleBackground from "@/components/ParticleBackground";
+import CustomCursor from "@/components/CustomCursor";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import CarDivider from "@/components/CarDivider";
+import About from "@/components/sections/About";
+import Work from "@/components/sections/Work";
+import Skills from "@/components/sections/Skills";
+import Contact from "@/components/sections/Contact";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative min-h-screen bg-background overflow-x-hidden">
+      <ParticleBackground />
+      <CustomCursor />
+      <Navbar />
+      
+      <main>
+        <Hero />
+        <CarDivider direction="left" />
+        <About />
+        <CarDivider direction="right" />
+        <Work />
+        <CarDivider direction="left" />
+        <Skills />
+        <CarDivider direction="right" />
+        <Contact />
+      </main>
+
+      <footer className="relative py-8 text-center border-t border-border/50">
+        <p className="font-inter text-sm text-muted-foreground">
+          © 2025 Premium Portfolio. Crafted with precision and passion.
+        </p>
+      </footer>
     </div>
   );
 };
