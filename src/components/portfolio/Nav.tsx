@@ -27,12 +27,10 @@ export function Nav() {
         }`}
       >
         <a
+                  
           href="#home"
-          className="flex min-w-0 items-center gap-2.5 text-sm font-semibold tracking-[0.18em] text-foreground"
+          className="flex min-w-0 items-center text-sm font-semibold tracking-[0.18em] text-foreground"
         >
-          <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-primary text-[0.7rem] text-primary-foreground">
-            {profile.initials}
-          </span>
           <span className="truncate">{profile.name}</span>
         </a>
 
