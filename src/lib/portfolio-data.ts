@@ -16,7 +16,7 @@ export const profile = {
   subline:
     "SAP Associate Consultant at EY GDS — focused on enterprise processes, SAP technologies and applied GenAI.",
   statusPill: "Currently: Associate Software Engineer @ EY GDS",
-  photo: "/profile.jpg", // drop your photo in the /public folder with this name
+  photo: "/profile.png", // drop your photo in the /public folder with this name
   aboutMe:
     "I'm a Computer Science graduate starting my journey in SAP consulting. I'm curious about how businesses actually operate, how enterprise systems support them, and where technology can make a real impact. Still learning, still exploring, and excited for what's ahead.",
   email: "roni7tubebusiness@gmail.com",
